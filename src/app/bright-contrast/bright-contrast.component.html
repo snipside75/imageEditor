@@ -1,0 +1,5 @@
+Brightness:
+<input type="range" min="-255" max="255" [(ngModel)]="brightness" (change)="this.imageService.applyFilters()">{{ brightness }}
+<br>
+Contrast:
+<input type="range" min="0" max="10" step="0.1" [(ngModel)]="contrast" (change)="this.imageService.applyFilters()">{{ contrast }}
